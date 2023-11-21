@@ -1,0 +1,68 @@
+﻿/* General Form Styling */
+.form-group {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(16, 24, 32, 1); /* Nosted style */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Nosted style */
+    color: #ccc; /* Nosted style */
+    transition: border-color 0.3s ease; /* Nosted style */
+}
+
+    .form-group:hover,
+    .form-group:focus {
+        border-color: orange; /* Nosted style */
+    }
+
+/* Container for both sections */
+container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Flexbox Layout for Left and Right Sections */
+.left-section,
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Button Styling */
+.create-button {
+    background-color: rgba(16, 24, 32, 1); /* Nosted style */
+    color: #ccc; /* Nosted style */
+    transition: background-color 0.3s ease; /* Nosted style */
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+    .create-button:hover {
+        background-color: orange; /* Nosted style */
+    }
+
+/* Style for the dropdown */
+#existingCustomer {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the new customer section when it's hidden */
+.new-customer-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.greyed-out {
+    z-index: 1;
+    opacity: 0.5;
+    pointer-events: none;
+    background-color: black;
+    cursor: not-allowed;
+}

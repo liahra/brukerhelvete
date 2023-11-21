@@ -1,0 +1,104 @@
+﻿@model Noested.Models.ServiceOrder
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Rediger serviceordre</h1>
+
+<h4>Serviceordre</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OrderId" />
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label>
+                <input asp-for="CustomerId" class="form-control" />
+                <span asp-validation-for="CustomerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderReceived" class="control-label"></label>
+                <input asp-for="OrderReceived" class="form-control" />
+                <span asp-validation-for="OrderReceived" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderCompleted" class="control-label"></label>
+                <input asp-for="OrderCompleted" class="form-control" />
+                <span asp-validation-for="OrderCompleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control">
+                    <option value="">Chose Condition</option>
+                    <option value="Recieved">Mottatt</option>
+                    <option value="InProgress">Under arbeid</option>
+                    <option value="Completed">Ferdigstilt</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModelYear" class="control-label"></label>
+                <input asp-for="ModelYear" class="form-control" />
+                <span asp-validation-for="ModelYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SerialNumber" class="control-label"></label>
+                <input asp-for="SerialNumber" class="form-control" />
+                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Warranty" class="control-label"></label>
+                <select asp-for="Warranty" class="form-control">
+                    <option value="">Chose Condition</option>
+                    <option value="Full">Full</option>
+                    <option value="Limited">Delvis</option>
+                    <option value="None">Ingen</option>
+                </select>
+                <span asp-validation-for="Warranty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerAgreement" class="control-label"></label>
+                <input asp-for="CustomerAgreement" class="form-control" />
+                <span asp-validation-for="CustomerAgreement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderDescription" class="control-label"></label>
+                <input asp-for="OrderDescription" class="form-control" />
+                <span asp-validation-for="OrderDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiscardedParts" class="control-label"></label>
+                <input asp-for="DiscardedParts" class="form-control" />
+                <span asp-validation-for="DiscardedParts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReplacedPartsReturned" class="control-label"></label>
+                <input asp-for="ReplacedPartsReturned" class="form-control" />
+                <span asp-validation-for="ReplacedPartsReturned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Shipping" class="control-label"></label>
+                <input asp-for="Shipping" class="form-control" />
+                <span asp-validation-for="Shipping" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

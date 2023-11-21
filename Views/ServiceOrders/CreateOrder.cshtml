@@ -1,0 +1,38 @@
+﻿@model Noested.Models.OrderViewModel
+
+@{
+    ViewData["Title"] = "CreateOrder";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/createServiceOrder.css">
+}
+<h1>Opprett serviceordre</h1>
+<form id="create_order_form" asp-action="CreateOrder" asp-controller="ServiceOrders" method="post">
+    <container>
+        <section id="newServiceOrderSection" class="left-section">
+            @{ ViewData.TemplateInfo.HtmlFieldPrefix = "NewOrder"; }
+            <partial name="_ServiceOrderPartial" model="@Model.NewOrder" />
+        </section>
+        <section id="newCustomerSection" class="right-section">
+            @{ ViewData.TemplateInfo.HtmlFieldPrefix = "NewCustomer"; }
+            <partial name="_CustomerPartial" model="@Model.NewCustomer" />
+        </section>
+    </container>
+    <div id="newChecklistSection" style="display:none;">
+        @{ ViewData.TemplateInfo.HtmlFieldPrefix = "NewChecklist"; }
+        <partial name="_ChecklistPartial" model="@Model.NewChecklist" />
+    </div>
+    <button type="submit" class="btn btn-primary create-button">Opprett</button>
+</form>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/js/createServiceOrder.js"></script>
+}

@@ -1,0 +1,164 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+a {
+    color: black !important;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.control-label {
+    font-weight: 600;
+}
+
+.p-custom-padding {
+    margin-bottom: 50px !important;
+}
+
+.img-custom-styles {
+    padding: 0 !important;
+    background-color: #101820 !important;
+}
+
+.img-alt {
+    opacity: 0.3 !important;
+}
+
+.login-card {
+    border-radius: 12px !important;
+    border: none !important;
+}
+
+.w-100 {
+    border-radius: 12px 0 0 12px !important;
+}
+
+.h1-custom-padding {
+    margin: 0 !important;
+    padding: 30px 0 0 0 !important;
+}
+
+.form-control {
+    height: 50px !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #495057 !important;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset;
+}
+
+.btn {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    font-size: 14px !important;
+    background-color: #101820 !important;
+    border: none !important;
+}
+
+/* Tilpasser høyden på søkefeltet og knappen */
+.form-control, .btn-custom {
+    height: 50px;
+}
+
+/* Ekstra stiltilpasninger kan legges til her om nødvendig */
+.btn-custom {
+    background-color: #101820 !important; /* Bootstrap primærfarge */
+    width: 150%;
+    color: white;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0; /* Rund av høyre hjørner */
+}
+
+.form-control {
+    border-radius: 0.25rem 0 0 0.25rem; /* Rund av venstre hjørner */
+}
+
+div.custom-margin {
+    margin-top: 0 !important;
+    margin-bottom: 50px !important;
+    font-size: 14px !important;
+}
+
+.card-body {
+    margin-right: 1rem !important;
+}
+
+.footer {
+    font-size: 14px !important;
+}
+
+/* Bilde-styling */
+
+.img-custom-styles {
+    position: relative;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.overlay-logo {
+    width: 325px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 16px;
+}
+
+.img-alt::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.overlay-content > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ----- Innlogging SLUTT -----*/
+

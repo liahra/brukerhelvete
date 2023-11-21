@@ -1,0 +1,75 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Logg inn";
+}
+
+@section Styles {
+    <style>
+        body {
+            margin-bottom: 60px;
+            background-color: #101820 !important;
+        }
+    </style>
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container login">
+    <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
+        <div class="col-md-8">
+            <div class="card login-card">
+                <div class="row g-0">
+                    <!-- Venstre side med bilde -->
+                    <div class="col-md-6 d-none d-md-flex img-custom-styles position-relative">
+                        <img src="~/images/noested_kjetting2.png" alt="Chains" class="w-100 img-alt" style="object-fit: cover;">
+                        <div class="overlay-content position-absolute">
+                            <img src="~/images/noested_logo.png" alt="Logo" class="overlay-logo">
+                            <p class="overlay-text">Det handler om tilkoblinger, å knytte FOLK sammen over hele verden!</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Høyre side av form -->
+                    <div class="col-md-6 custom-padding">
+                        <div class="card-body custom-padding">
+                            <div class="text-left mb-4">
+                                <h1 class="h1-custom-padding">Velkommen!</h1>
+                                <p class="p-custom-padding">Logg inn på din konto.</p>
+                            </div>
+                            <form id="account" method="post">
+                                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                                <!-- Form-input og knapper -->
+                                <div class="form-floating mb-3">
+                                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="navn@eksempel.no" />
+                                    <label asp-for="Input.Email">Epost</label>
+                                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Passord" />
+                                    <label asp-for="Input.Password">Passord</label>
+                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                    <div class="custom-margin mt-3 text-right">
+                                        <a id="forgot-password" asp-page="./ForgotPassword">Glemt passord?</a>
+                                    </div>
+                                </div>
+
+                                <button id="login-submit" type="submit" class="btn btn-primary btn-lg btn-block">Logg inn</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<!-- Bootstrap JS + dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

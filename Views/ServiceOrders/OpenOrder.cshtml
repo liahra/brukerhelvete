@@ -1,0 +1,86 @@
+﻿@model FillOrderViewModel
+
+<h1>View Service Order</h1>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/checklist.css" asp-append-version="true">
+}
+    <section class="order-info">
+        <!-- OrderId -->
+        <div>
+            <label asp-for="OrderId">Service Order ID / Checklist ID</label>
+            <span>@Model.OrderId</span>
+        </div>
+        <!-- CustomerId -->
+        <div>
+            <label asp-for="CustomerId">Customer ID</label>
+            <span>@Model.CustomerId</span>
+        </div>
+        <!-- Product Name -->
+        <div>
+            <label asp-for="ProductName">Product Name</label>
+            <span>@Model.ProductName</span>
+        </div>
+        <!-- Product Type -->
+        <div>
+            <label asp-for="ProductT">Product Type</label>
+            <span>@Model.ProductT</span>
+        </div>
+        <!-- Order Status -->
+        <div>
+            <label asp-for="OrderStatus">Order Status</label>
+            <span>@Model.OrderStatus</span>
+        </div>
+        <!-- When was it Received? -->
+        <div>
+            <label asp-for="OrderReceived">Order Received</label>
+            <span>@Model.OrderReceived</span>
+        </div>
+        <!-- Customer Comment -->
+        <div>
+            <label asp-for="OrderDescription">Order Description</label>
+            <span>@Model.OrderDescription</span>
+        </div>
+    </section>
+
+    <form id="order_form" asp-controller="ServiceOrders" asp-action="SaveFilledOrder" method="post">
+
+        <section id="checklistSection">
+            @{ ViewData.TemplateInfo.HtmlFieldPrefix = "UpdWinchlist"; }
+            <partial name="_WinchChecklistPartial" model="@Model.UpdWinchlist" />
+            @{ ViewData.TemplateInfo.HtmlFieldPrefix = ""; }
+        </section>
+        <!-- RepairComment -->
+        <div class="form-group">
+            <label asp-for="RepairComment" class="form-label">Beskrivelse av Reparasjoner</label>
+            <textarea class="form-control" asp-for="RepairComment"></textarea>
+            <span asp-validation-for="RepairComment" class="text-danger"></span>
+        </div>
+        <!-- Work Hours used -->
+        <div class="form-group">
+            <label asp-for="WorkHours">Arbeidstimer brukt</label>
+            <input asp-for="WorkHours" class="form-control">
+            <span asp-validation-for="WorkHours" class="text-danger"></span>
+        </div>
+        <!-- RepairComment -->
+        <div class="form-group">
+            <label asp-for="MechSignature">Mekaniker Signatur</label>
+            <input asp-for="MechSignature" class="form-control" />
+            <span asp-validation-for="MechSignature" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Ferdigstill Ordre</button>
+
+        <input type="hidden" asp-for="OrderId" />
+        <input type="hidden" asp-for="CustomerId" />
+        <input type="hidden" asp-for="ProductName" />
+        <input type="hidden" asp-for="ProductT" />
+        <input type="hidden" asp-for="OrderStatus" />
+        <input type="hidden" asp-for="OrderReceived" />
+        <input type="hidden" asp-for="OrderCompleted" />
+        <input type="hidden" asp-for="OrderDescription" />
+    </form>
+
+@section Scripts {
+    <script src="/js/serviceorder.js"></script>
+}

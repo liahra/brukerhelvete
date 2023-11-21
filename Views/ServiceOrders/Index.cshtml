@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Noested.Models.ServiceOrder>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/serviceOrder.css">
+}
+
+<h1>Alle Serviceordre</h1>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Left Empty Column -->
+        <div class="col-md-2"></div>
+
+        <!-- Middle Column -->
+        <div class="col-md-8">
+
+            <!-- Search Bar -->
+            <form method="get" action="@Url.Action("Search", "ServiceOrders")" class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="query" placeholder="Søk på serviceordre">
+                    <div class="input-group-append">
+                        <button class="btn-custom" type="submit">Søk</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Service order loop -->
+            @if (Model.Count() == 0)
+            {
+                <p>Ingen serviceordre funnet</p>
+            }
+            else
+            {
+                <p>Antall serviceordre: @Model.Count()</p>
+            }
+
+            @foreach (var order in Model)
+            {
+                <section class="service-order-item">
+                    <a href="@Url.Action("OpenOrder", "ServiceOrders", new { id = order.OrderId })">
+                        <div>Ordre Opprettet: @order.OrderReceived</div>
+                        <div>Ordrenummer: @order.OrderId</div>
+                        <div>Kundenummer: @order.CustomerId</div>
+                        <div>Produktnavn: @order.ProductName</div>
+                        <div>Produkttype: @order.Product</div>
+                        <div>Ordrestatus: @order.Status</div>
+                    </a>
+                </section>
+            }
+
+        </div>
+
+        <!-- Right Empty Column -->
+        <div class="col-md-2"></div>
+    </div>
+</div>

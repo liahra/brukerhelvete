@@ -1,0 +1,22 @@
+﻿@model Noested.Models.Checklist
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<!-- Product Type -->
+<div class="form-group">
+    <label asp-for="ProductType">Produkttype</label>
+    <input asp-for="ProductType" class="form-control" />
+    <span asp-validation-for="ProductType" class="text-danger"></span>
+</div>
+
+<!-- Prepared By -->
+<div class="form-group">
+    <label asp-for="PreparedBy">Utført av</label>
+    <input asp-for="PreparedBy" class="form-control" />
+</div>
+
+<!-- Service Procedure -->
+<div class="form-group">
+    <label asp-for="ServiceProcedure">Prosedyre</label>
+    <input asp-for="ServiceProcedure" class="form-control" />
+</div>

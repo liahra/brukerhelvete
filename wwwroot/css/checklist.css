@@ -1,0 +1,35 @@
+﻿/* Større radioknapper */
+input[type="radio"] {
+    transform: scale(1.5); /* Justér størrelsen etter behov */
+    margin: 0 5px; /* Justér mellomrommene */
+    vertical-align: middle; /* Sentrér vertikalt */
+}
+
+/* Sentrere innhold i feltene */
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+    /* Lik bredde på td elementer som har radioknapper */
+    .table td.radio-cell {
+        width: 1%;
+        white-space: nowrap;
+    }
+
+/* For kategorifeltene */
+td.status-ok {
+    background-color: #e0f2e0; /* grønn */
+}
+
+td.status-needsreplacement {
+    background-color: #fef4d9; /* gul */
+}
+
+td.status-defective {
+    background-color: #fdecec; /* rød */
+}
+
+td.category-header.all-checked {
+    background-color: #e0f2e0 !important;
+}

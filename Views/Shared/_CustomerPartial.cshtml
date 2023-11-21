@@ -1,0 +1,48 @@
+﻿@model Noested.Models.Customer
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <!-- Customer's First Name -->
+<div class="form-group">
+    <label asp-for="FirstName">Fornavn</label>
+    <input asp-for="FirstName" class="form-control" />
+    <span asp-validation-for="FirstName" class="text-danger"></span>
+</div>
+    <!-- Customer's Last Name -->
+<div class="form-group">
+    <label asp-for="LastName">Etternavn</label>
+    <input asp-for="LastName" class="form-control" />
+    <span asp-validation-for="LastName" class="text-danger"></span>
+
+</div>
+    <!-- Customer's Street Address -->
+<div class="form-group">
+    <label asp-for="Street">Gateadresse</label>
+    <input asp-for="Street" class="form-control" />
+    <span asp-validation-for="Street" class="text-danger"></span>
+</div>
+    <!-- Customer's Postal Code -->
+<div class="form-group">
+    <label asp-for="PostalCode">Postnummer</label>
+    <input asp-for="PostalCode" class="form-control" />
+    <span asp-validation-for="PostalCode" class="text-danger"></span>
+</div>
+    <!-- Customer's City -->
+<div class="form-group">
+    <label asp-for="City">By</label>
+    <input asp-for="City" class="form-control" />
+    <span asp-validation-for="City" class="text-danger"></span>
+</div>
+    <!-- Customer's Email -->
+<div class="form-group">
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email" class="form-control" />
+    <span asp-validation-for="Email" class="text-danger"></span>
+</div>
+    <!-- Customer's Phone -->
+<div class="form-group">
+    <label asp-for="Phone">Telefon</label>
+    <input asp-for="Phone" class="form-control" />
+    <span asp-validation-for="Phone" class="text-danger"></span>
+</div>
+    <!-- Hidden value -->
+    <input type="hidden" asp-for="CustomerId" value="0">

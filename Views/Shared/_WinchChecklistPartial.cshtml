@@ -1,0 +1,170 @@
+﻿@model Noested.Models.WinchChecklist
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<table class="table table-bordered mb-3" id="checklistTable">
+    <thead>
+        <tr>
+            <th>Kategorier</th>
+            <th>Sjekkpunkter</th>
+            <th>OK</th>
+            <th>Bør Skiftes</th>
+            <th>Defekt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- MechBrakes Row -->
+        <tr>
+            <td class="category-header" rowspan="8">Mechanical</td>
+            <td><label asp-for="MechBrakes" class="control-label"></label></td>
+            <td><input asp-for="MechBrakes" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechBrakes" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechBrakes" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- MechDrumBearing Row -->
+        <tr>
+            <td><label asp-for="MechDrumBearing" class="control-label"></label></td>
+            <td><input asp-for="MechDrumBearing" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechDrumBearing" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechDrumBearing" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- MechStoragePTO Row -->
+        <tr>
+            <td><label asp-for="MechStoragePTO" class="control-label"></label></td>
+            <td><input asp-for="MechStoragePTO" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechStoragePTO" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechStoragePTO" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- MechWire Row -->
+        <tr>
+            <td><label asp-for="MechWire" class="control-label"></label></td>
+            <td><input asp-for="MechWire" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechWire" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechWire" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- MechChainTensioner Row -->
+        <tr>
+            <td><label asp-for="MechChainTensioner" class="control-label"></label></td>
+            <td><input asp-for="MechChainTensioner" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechChainTensioner" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechChainTensioner" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- MechPinionBearing Row -->
+        <tr>
+            <td><label asp-for="MechPinionBearing" class="control-label"></label></td>
+            <td><input asp-for="MechPinionBearing" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechPinionBearing" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechPinionBearing" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- MechClutch Row -->
+        <tr>
+            <td><label asp-for="MechClutch" class="control-label"></label></td>
+            <td><input asp-for="MechClutch" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechClutch" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechClutch" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- MechSprocketWedges Row -->
+        <tr>
+            <td><label asp-for="MechSprocketWedges" class="control-label"></label></td>
+            <td><input asp-for="MechSprocketWedges" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="MechSprocketWedges" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="MechSprocketWedges" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+    </tbody>
+    <!-- HydCylinder Row -->
+    <tbody>
+        <tr>
+            <td class="category-header" rowspan="5">Hydraulic</td>
+            <td><label asp-for="HydCylinder" class="control-label"></label></td>
+            <td><input asp-for="HydCylinder" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="HydCylinder" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="HydCylinder" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- HydHydraulicBlock Row -->
+        <tr>
+            <td><label asp-for="HydHydraulicBlock" class="control-label"></label></td>
+            <td><input asp-for="HydHydraulicBlock" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="HydHydraulicBlock" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="HydHydraulicBlock" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- HydTankOil Row -->
+        <tr>
+            <td><label asp-for="HydTankOil" class="control-label"></label></td>
+            <td><input asp-for="HydTankOil" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="HydTankOil" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="HydTankOil" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- HydGearboxOil Row -->
+        <tr>
+            <td><label asp-for="HydGearboxOil" class="control-label"></label></td>
+            <td><input asp-for="HydGearboxOil" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="HydGearboxOil" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="HydGearboxOil" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- HydBrakeCylinder Row -->
+        <tr>
+            <td><label asp-for="HydBrakeCylinder" class="control-label"></label></td>
+            <td><input asp-for="HydBrakeCylinder" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="HydBrakeCylinder" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="HydBrakeCylinder" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+    </tbody>
+    <!-- ElCableNetwork Row -->
+    <tbody>
+        <tr>
+            <td class="category-header" rowspan="3">Electrical</td>
+            <td><label asp-for="ElCableNetwork" class="control-label"></label></td>
+            <td><input asp-for="ElCableNetwork" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="ElCableNetwork" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="ElCableNetwork" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- ElRadio Row -->
+        <tr>
+            <td><label asp-for="ElRadio" class="control-label"></label></td>
+            <td><input asp-for="ElRadio" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="ElRadio" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="ElRadio" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- ElButtonBox Row -->
+        <tr>
+            <td><label asp-for="ElButtonBox" class="control-label"></label></td>
+            <td><input asp-for="ElButtonBox" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="ElButtonBox" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="ElButtonBox" type="radio" value="Defective" class="form-check-input" />
+        </tr>
+    </tbody>
+    <!-- TensionCheckBar Row -->
+    <tbody>
+        <tr>
+            <td class="category-header" rowspan="1">Tension</td>
+            <td><label asp-for="TensionCheckBar" class="control-label"></label></td>
+            <td><input asp-for="TensionCheckBar" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="TensionCheckBar" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="TensionCheckBar" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+    </tbody>
+    <!-- TestWinch Row -->
+    <tbody>
+        <tr>
+            <td class="category-header" rowspan="3">Testing</td>
+            <td><label asp-for="TestWinch" class="control-label"></label></td>
+            <td><input asp-for="TestWinch" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="TestWinch" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="TestWinch" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- TestTraction Row -->
+        <tr>
+            <td><label asp-for="TestTraction" class="control-label"></label></td>
+            <td><input asp-for="TestTraction" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="TestTraction" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="TestTraction" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+        <!-- TestBrakes Row -->
+        <tr>
+            <td><label asp-for="TestBrakes" class="control-label"></label></td>
+            <td><input asp-for="TestBrakes" type="radio" value="OK" class="form-check-input" /></td>
+            <td><input asp-for="TestBrakes" type="radio" value="NeedsReplacement" class="form-check-input" /></td>
+            <td><input asp-for="TestBrakes" type="radio" value="Defective" class="form-check-input" /></td>
+        </tr>
+    </tbody>
+</table>

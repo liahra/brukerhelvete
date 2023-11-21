@@ -1,0 +1,89 @@
+﻿@model Noested.Models.ServiceOrder
+
+<!-- Existing Customer Dropdown -->
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="CustomerId">Velg Eksisterende Kunde</label>
+    <select id="CustomerId" asp-for="CustomerId" asp-items="ViewBag.ExistingCustomers" class="form-control" onchange="toggleNewCustomerSection()">
+        <option value="0">-- Opprett Ny Bruker (Nedtrekksmeny) --</option>
+    </select>
+    <span asp-validation-for="CustomerId" class="text-danger"></span>
+</div>
+<!-- Garanti -->
+<div class="form-group">
+    <label asp-for="Warranty" class="control-label"></label>
+    <select asp-for="Warranty" class="form-control">
+        <option value="">Chose Condition</option>
+        <option value="Full">Full</option>
+        <option value="Limited">Delvis</option>
+        <option value="None">Ingen</option>
+    </select>
+    <span asp-validation-for="Warranty" class="text-danger"></span>
+</div>
+<!-- Kundeavtale -->
+<div class="form-group">
+    <label asp-for="CustomerAgreement" class="control-label"></label>
+    <input asp-for="CustomerAgreement" class="form-control" />
+    <span asp-validation-for="CustomerAgreement" class="text-danger"></span>
+</div>
+<!-- Ordrebeskrivelse -->
+<div class="form-group">
+    <label asp-for="OrderDescription" class="control-label"></label>
+    <input asp-for="OrderDescription" class="form-control" />
+    <span asp-validation-for="OrderDescription" class="text-danger"></span>
+</div>
+<!-- Produktnavn -->
+<div class="form-group">
+    <label asp-for="ProductName" title="Produktnavn">Produktnavn</label>
+    <input asp-for="ProductName" class="form-control" required placeholder="f.eks 'IGLAND 5002 Pento TL'" />
+    <span asp-validation-for="ProductName" class="text-danger"></span>
+</div>
+<!-- Produkttype -->
+<div class="form-group">
+    <label asp-for="Product" class="control-label"></label>
+    <select asp-for="Product" class="form-control">
+        <option value="Winch">Vinsj</option>
+        <option value="TimberTrailer">Tømmertrailer</option>
+        <option value="TractorShears">Traktorskjær</option>
+        <option value="LiftEquip">Løfteutstyr</option>
+        <option value="WoodEquip">Vedutstyr</option>
+        <option value="SnowBloPlo">Snøfres/plog</option>
+        <option value="SandBlaster">Sandstrøer</option>
+
+    </select>
+    <span asp-validation-for="Product" class="text-danger"></span>
+</div>
+<!-- Serienummer -->
+<div class="form-group">
+    <label asp-for="SerialNumber" class="control-label"></label>
+    <input asp-for="SerialNumber" class="form-control" />
+    <span asp-validation-for="SerialNumber" class="text-danger"></span>
+</div>
+<!-- Årsmodell -->
+<div class="form-group">
+    <label asp-for="ModelYear" class="control-label"></label>
+    <input asp-for="ModelYear" class="form-control" />
+    <span asp-validation-for="ModelYear" class="text-danger"></span>
+</div>
+<!-- Bruktdeler -->
+<div class="form-group">
+    <label asp-for="DiscardedParts" class="control-label"></label>
+    <input asp-for="DiscardedParts" class="form-control" />
+    <span asp-validation-for="DiscardedParts" class="text-danger"></span>
+</div>
+<!-- Erstatningsdeler -->
+<div class="form-group">
+    <label asp-for="ReplacedPartsReturned" class="control-label"></label>
+    <input asp-for="ReplacedPartsReturned" class="form-control" />
+    <span asp-validation-for="ReplacedPartsReturned" class="text-danger"></span>
+</div>
+<!-- Shipping -->
+<div class="form-group">
+    <label asp-for="Shipping" class="control-label"></label>
+    <input asp-for="Shipping" class="form-control" />
+    <span asp-validation-for="Shipping" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="IsActive" class="form-check-label"></label>
+    <input asp-for="IsActive" class="form-check-input" />
+</div>

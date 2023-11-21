@@ -1,0 +1,32 @@
+﻿/* Specific to "Views >ServiceOrder >Index.cshtml" */
+
+.service-order-list {
+    max-height: calc(5 * 120px);
+    overflow-y: auto; /* Scrollbar overflow */
+}
+
+.service-order-item {
+    text-decoration: none; /* Remove default underline from anchortag */
+    color: black; /* Remove default blue from anchortag */
+    z-index: 1;
+    border: 2px solid #007bff;
+    margin-bottom: 20px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px; /* Rounded Edges */
+    background-color: #e6f7ff; /* Light Blue Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow Effect */
+    transition: all 0.3s ease; /* Transition for hover and click */
+}
+
+    .service-order-item:hover {
+        background-color: #fffc00; /* Slightly yellow when hovered */
+    }
+
+    .service-order-item:active {
+        background-color: #ffff66; /* Brighter yellow when clicked */
+    }
+
+div {
+    margin-bottom: 10px;
+}

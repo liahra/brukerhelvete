@@ -9,145 +9,145 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Noested
 build_property.RootNamespace = Noested
-build_property.ProjectDir = C:\Users\chris\Desktop\141123_noested\noested\
+build_property.ProjectDir = C:\Users\chris\Desktop\brukerhelvete\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\chris\Desktop\141123_noested\noested
+build_property.MSBuildProjectDirectory = C:\Users\chris\Desktop\brukerhelvete
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Checklists/Create.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Checklists/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tsaXN0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Checklists/Delete.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Checklists/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tsaXN0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Checklists/Details.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Checklists/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tsaXN0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Checklists/Edit.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Checklists/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tsaXN0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Checklists/Index.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Checklists/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tsaXN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Customers/Create.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Customers/Delete.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Customers/Details.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Customers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Customers/Edit.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Customers/Index.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Home/Index.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Home/Privacy.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/ServiceOrders/CreateOrder.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/ServiceOrders/CreateOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU9yZGVyc1xDcmVhdGVPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/ServiceOrders/Delete.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/ServiceOrders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU9yZGVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/ServiceOrders/Details.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/ServiceOrders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU9yZGVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/ServiceOrders/Edit.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/ServiceOrders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU9yZGVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/ServiceOrders/Index.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/ServiceOrders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU9yZGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/ServiceOrders/OpenOrder.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/ServiceOrders/OpenOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU9yZGVyc1xPcGVuT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/Error.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/_ChecklistPartial.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/_ChecklistPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGVja2xpc3RQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/_CustomerPartial.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/_CustomerPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21lclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/_ServiceOrderPartial.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/_ServiceOrderPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZXJ2aWNlT3JkZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/_WinchChecklistPartial.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/_WinchChecklistPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9XaW5jaENoZWNrbGlzdFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/_ViewImports.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/_ViewStart.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chris/Desktop/141123_noested/noested/Views/Shared/_Layout.cshtml]
+[C:/Users/chris/Desktop/brukerhelvete/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jefttkelwh

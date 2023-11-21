@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\Desktop\\141123_noested\\noested\\Noested.csproj": {}
+    "C:\\Users\\chris\\Desktop\\brukerhelvete\\Noested.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\Desktop\\141123_noested\\noested\\Noested.csproj": {
+    "C:\\Users\\chris\\Desktop\\brukerhelvete\\Noested.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\Desktop\\141123_noested\\noested\\Noested.csproj",
+        "projectUniqueName": "C:\\Users\\chris\\Desktop\\brukerhelvete\\Noested.csproj",
         "projectName": "Noested",
-        "projectPath": "C:\\Users\\chris\\Desktop\\141123_noested\\noested\\Noested.csproj",
+        "projectPath": "C:\\Users\\chris\\Desktop\\brukerhelvete\\Noested.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\Desktop\\141123_noested\\noested\\obj\\",
+        "outputPath": "C:\\Users\\chris\\Desktop\\brukerhelvete\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",

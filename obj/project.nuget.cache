@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d6FxZ1OqKbLH34jEbLlEtvF3FxklkjiGOw4wzrvtCL6BjhlIyGLS6du63hFcM74zFZupo4G/g+7nrNsX8RbwwQ==",
+  "dgSpecHash": "0kozEzy8kr61PhCT/RdA4PxpTG6FpxcxO7aS1sLv/QGGlgBsRqoFMa7ytsQpF/A6s5BeqDxTAo0khfw0QBfdtg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Desktop\\141123_noested\\noested\\Noested.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Desktop\\brukerhelvete\\Noested.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
